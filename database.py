@@ -10,7 +10,7 @@ def init_db():
     
 
 
-    
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS master_salt 
                       (id INTEGER PRIMARY KEY, salt BLOB)''')
     
@@ -51,3 +51,18 @@ def retrieve_password(service):
     result = cursor.fetchone()
     conn.close()
     return result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
