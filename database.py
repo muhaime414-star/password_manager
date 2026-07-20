@@ -8,6 +8,9 @@ def init_db():
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     
+
+
+    
     cursor.execute('''CREATE TABLE IF NOT EXISTS master_salt 
                       (id INTEGER PRIMARY KEY, salt BLOB)''')
     
